@@ -20,14 +20,15 @@ if ($modal) {
 
 if ($('.datepicker')) {
   M.Datepicker.init($$('.datepicker'), {
-    format: 'dd.mm.yyyy'
+    format: 'dd.mm.yyyy',
+    showClearBtn: true
   })
 }
 
 const $filter = $('.js-filter')
 
 if ($filter) {
-  $filter.addEventListener('click', () => {
+  $filter.addEventListener('click', function() {
     $filter.classList.toggle('active')
     $('.js-filter-block').classList.toggle('hide')
   })
