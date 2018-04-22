@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <title>History</title>
+</head>
+<body>
+<!--SIDEBAR-->
+<ul class="sidenav sidenav-fixed a-sidenav">
+    <h4>Newborn</h4>
+    <li class="bold"><a href="#" class="waves-effect waves-orange">Обзор</a></li>
+    <li class="bold"><a href="#" class="waves-effect waves-orange">Аналитика</a></li>
+    <li class="bold active"><a href="#" class="waves-effect waves-orange">История</a></li>
+    <li class="bold"><a href="#" class="waves-effect waves-orange">Добавить заказ</a></li>
+    <li class="bold "><a href="#" class="waves-effect waves-orange">Ассортимент</a></li>
+    <li class="bold last"><a href="#" class="waves-effect waves-orange">Выйти</a></li>
+</ul>
+<!--CONTENT-->
+<main class="content">
+    <div class="page-title">
+        <h4>История заказов</h4>
+        <button class="btn btn-small js-filter tooltipped" data-tooltip="Открыть фильтр">
+            <i class="material-icons">filter_list</i>
+        </button>
+    </div>
+
+    <div class="filter js-filter-block hide">
+        <div class="fr">
+            <div class="col order">
+                <div class="input-field inline order-position-input">
+                    <input type="number" id="number" min="1">
+                    <label for="number">Номер заказа</label>
+                </div>
+            </div>
+            <div class="col filter-pickers">
+                <div class="input-field">
+                    <input type="text" class="datepicker">
+                    <label>Начало</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" class="datepicker">
+                    <label>Конец</label>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn waves-effect wavers-light btn-small">Применить фильтр</button>
+    </div>
+
+
+    <table class="highlight mb2">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Сумма</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>21.12.2000</td>
+            <td>14:21</td>
+            <td>12 211 руб.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="center mb2">
+        <button class="btn waves-effect grey darken-1 btn-small">Загрузить еще</button>
+    </div>
+
+</main>
+
+
+<!--Floating button-->
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">add</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating green"><i class="material-icons">assignment</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">list</i></a></li>
+    </ul>
+</div>
+
+<script src="scripts/materialize.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

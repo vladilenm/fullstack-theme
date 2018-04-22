@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <title>Overview</title>
+</head>
+<body>
+<!--SIDEBAR-->
+<ul class="sidenav sidenav-fixed a-sidenav">
+    <h4>Newborn</h4>
+    <li class="bold active"><a href="#" class="waves-effect waves-orange">Обзор</a></li>
+    <li class="bold"><a href="#" class="waves-effect waves-orange">Аналитика</a></li>
+    <li class="bold"><a href="#" class="waves-effect waves-orange">История</a></li>
+    <li class="bold"><a href="#" class="waves-effect waves-orange">Добавить заказ</a></li>
+    <li class="bold "><a href="#" class="waves-effect waves-orange">Ассортимент</a></li>
+    <li class="bold last"><a href="#" class="waves-effect waves-orange">Выйти</a></li>
+</ul>
+<!--CONTENT-->
+<main class="content">
+    <div class="page-title">
+        <h4>
+            Обзор за вчера (09.04.2018)
+            <i class="material-icons black-text pointer" id="dashboard-info">info_outline</i>
+        </h4>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l6">
+            <div class="card light-blue lighten-2 white-text">
+                <div class="card-content">
+                    <span class="card-title">Выручка:</span>
+                    <h3>20 000 руб.</h3>
+                    <h3 class="green-text text-darken-2 m0 mb1">
+                        <i class="material-icons">arrow_upward</i>
+                        26%
+                    </h3>
+                    <p>Выручка вашего бизнеса вчера на 20% выше среднего: 5555 руб. в день</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 l6">
+            <div class="card orange lighten-2 white-text">
+                <div class="card-content">
+                    <span class="card-title">Заказы:</span>
+                    <h3>200 зак.</h3>
+                    <h3 class="red-text m0 mb1">
+                        <i class="material-icons">arrow_downward</i>
+                        26%
+                    </h3>
+                    <p>Число заказов вчера на 26% ниже среднего значения: 3 зак. в день</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons">info</i></a>
+
+<div class="tap-target" data-target="menu">
+    <div class="tap-target-content">
+        <h5>Зачем нужна эта страница?</h5>
+        <p>Страница “Обзор” покажет динамику продаж за предыдущий день. Сравнение со средним значениями поможет вам понять, как идут дела у Вашего бизнеса.</p>
+    </div>
+</div>
+
+
+<!--Floating button-->
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">add</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating green"><i class="material-icons">assignment</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">list</i></a></li>
+    </ul>
+</div>
+
+<script src="scripts/materialize.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
